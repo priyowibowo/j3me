@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_flightmanager/models/rules">
+	<fieldset>
+		<field name="id" type="hidden" />
+		<field name="name" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_NAME" description="COM_FLIGHTMANAGER_FLIGHTMANAGER_NAME_DESC"
+			size="40" class="inputbox" default="" required="true" />
+		<field name="flight_number" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_FLIGHT_NUMBER"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_FLIGHT_NUMBER_DESC"
+			size="40" class="inputbox" default="FNfield" />
+		<field name="outgoing_date_departure" type="calendar"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_DATE_DEPARTURE"
+			description="Format YYYY-MM-DD" class="inputbox" size="22" format="%Y-%m-%d"
+			filter="user_utc" />
+		<field name="outgoing_time_departure" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_TIME_DEPARTURE"
+			description="Format HH-MM-SS" size="40" class="inputbox" default="00-00-00" />
+		<field name="outgoing_date_arrival" type="calendar"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_DATE_ARRIVAL"
+			description="Format YYYY-MM-DD" class="inputbox" size="22" format="%Y-%m-%d"
+			filter="user_utc" />
+		<field name="outgoing_time_arrival" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_TIME_ARRIVAL"
+			description="Format HH-MM-SS" size="40" class="inputbox" default="00-00-00" />
+		<field name="outgoing_departure_city" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_DEPARTURE_CITY"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_DEPARTURE_CITY_DESC"
+			size="40" class="inputbox" />
+		<field name="outgoing_arrival_city" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_ARRIVAL_CITY"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_OUTGOING_ARRIVAL_CITY_DESC"
+			size="40" class="inputbox" />
+		<field name="return_date_departure" type="calendar"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_DATE_DEPARTURE"
+			description="Format YYYY-MM-DD" class="inputbox" size="22" format="%Y-%m-%d"
+			filter="user_utc" />
+		<field name="return_time_departure" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_TIME_DEPARTURE"
+			description="Format HH-MM-SS" size="40" class="inputbox" default="00-00-00" />
+		<field name="return_date_arrival" type="calendar"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_DATE_ARRIVAL"
+			description="Format YYYY-MM-DD" class="inputbox" size="22" format="%Y-%m-%d"
+			filter="user_utc" />
+		<field name="return_time_arrival" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_TIME_ARRIVAL"
+			description="Format HH-MM-SS" size="40" class="inputbox" default="00-00-00" />
+		<field name="return_departure_city" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_DEPARTURE_CITY"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_DEPARTURE_CITY_DESC"
+			size="40" class="inputbox" />
+		<field name="return_arrival_city" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_ARRIVAL_CITY"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_RETURN_ARRIVAL_CITY_DESC"
+			size="40" class="inputbox" />
+		<field name="prica_adt" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_ADT"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_ADT_DESC"
+			size="40" class="inputbox" />
+		<field name="price_chd" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_CHD"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_CHD_DESC"
+			size="40" class="inputbox" />
+		<field name="price_inf" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_INF"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_PRICE_INF_DESC"
+			size="40" class="inputbox" />
+		<field name="baggage_kg" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_BAGGAGE_KG"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_BAGGAGE_KG_DESC"
+			size="40" class="inputbox" />
+		<field name="baggage_price" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_BAGGAGE_PRICE_KG"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_BAGGAGE_PRICE_KG_DESC"
+			size="40" class="inputbox" />
+		<field name="fare_rules" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_FARE_RULES"
+			description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_FARE_RULES_DESC"
+			size="40" class="inputbox" />
+		<field name="tax" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_TAX" description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_TAX_DESC"
+			size="40" class="inputbox" />
+		<field name="seats" type="text"
+			label="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_SEATS" description="COM_FLIGHTMANAGER_FLIGHTMANAGER_HEADING_SEATS_DESC"
+			size="40" class="inputbox" />
+	</fieldset>
+</form>

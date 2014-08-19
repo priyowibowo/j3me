@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.006" id="AASchema.CommonTypes">
+
+	<xs:attributeGroup name="AAPayloadAttributes">
+		<xs:attribute name="UserId" type="xs:string" use="required"/>
+		<xs:attribute name="ChannelId" type="xs:string" use="required"/>
+		<xs:attributeGroup ref="AACommonPayloadAttributes" />
+	</xs:attributeGroup>
+	
+	<xs:attributeGroup name="AACommonPayloadAttributes">
+		<xs:attribute name="MessageId" type="xs:string" use="required"/>
+		<xs:attribute name="TimeStamp" type="xs:dateTime" use="optional"/>
+		<xs:attribute name="Version" type="xs:int" use="required"/>
+		<xs:attribute name="TransactionIdentifier" type="xs:string" use="optional"/>
+		<xs:attribute name="EchoToken" type="xs:string" use="optional"/>
+		<xs:attribute name="SequenceNmbr"  type="xs:string" use="required"/>
+		<xs:attribute name="PrimaryLangID" type="xs:string" use="optional"/>
+	</xs:attributeGroup>
+
+	<xs:complexType name="AAStatusErrorsAndWarnings">
+		<xs:sequence>
+			<xs:element name="ErrorCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ErrorText" type="xs:string" minOccurs="0"/>
+			<xs:element name="warningMessage" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="success" type="xs:boolean" use="required"/>
+	</xs:complexType>
+	
+	<xs:attributeGroup name="AACurrencyAmountGroup">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Amount.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="Amount" type="xs:decimal" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="en">The code specifying a monetary unit. Use ISO 4217, three alpha code.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="CurrencyCode" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="en">The code specifying a monetary unit. Use ISO 4217, three alpha code.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="DecimalPlaces" type="xs:integer" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="en">Indicates the number of decimal places for a particular currency. This is equivalent to the ISO 4217 standard "minor unit". Typically used when the amount provided includes the minor unit of currency without a decimal point (e.g., USD 8500 needs DecimalPlaces="2" to represent $85).</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+
+	<xs:simpleType name="ETicketStatusUpdateType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CHECKEDIN" />
+			<xs:enumeration value="BOARDED" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

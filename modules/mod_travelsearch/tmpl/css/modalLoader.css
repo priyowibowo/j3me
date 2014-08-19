@@ -1,0 +1,19 @@
+/* 
+    Document   : modalLoader
+    Created on : Jan 22, 2013, 2:53:15 PM
+    Author     : Priyo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#loadingScreen {
+    background: url(redmond/images/ajax-loader.gif) no-repeat 5px 8px;
+    padding-left: 25px;
+    margin-left: 33px;
+}
+
+/* hide the close x on the loading screen */
+.loadingScreenWindow .ui-dialog-titlebar-close {
+    display: none;
+}
+

@@ -1,0 +1,27 @@
+jQuery(document).ready(function(){   
+    if(jQuery("#system-message-container").length > 0){
+        jQuery('#system-message-container').dialog({
+//            autoOpen: false,
+            width: 600,
+            height: 400,
+            draggable : false,
+            resizable : false,
+            modal: true
+        });
+//        jQuery(this).dialog('open');
+    }
+    
+   
+    
+//    
+//    jQuery("[id^=more-hotel]").click(function(e){
+//        e.preventDefault();
+//        var idpkg = this.id;
+//        if(idpkg.length>10){
+//            var postfix = idpkg.substr(idpkg.length-1, 1);
+//            jQuery("#hotel-detail-"+postfix).dialog('open');
+//        } else {
+//            jQuery("#hotel-detail").dialog('open');
+//        }
+//   });
+});

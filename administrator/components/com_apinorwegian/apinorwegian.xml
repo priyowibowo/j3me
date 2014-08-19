@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+
+	<name>COM_APINORWEGIAN</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>November 2011</creationDate>
+	<author>priyo@rejse-eksperterne</author>
+	<authorEmail>priyowbw@gmail.com</authorEmail>
+	<copyright>Rejse-Eksperterne (C) 2011-2012.</copyright>
+	<license>License Info</license>
+	<!-- The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_APINORWEGIAN_DESC</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+        <languages folder="languages/site">
+            <language tag="en-GB">en-GB/en-GB.com_apinorwegian.ini</language>
+	</languages>
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder to copy 
+		FROM in the package to install therefore files copied in this section are 
+		copied from /site/ in the package -->
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<!--menu>COM_APINORWEGIAN</menu>
+                <submenu>
+                    <menu link="option=com_apinorwegian" img="">COM_APINORWEGIAN</menu>
+                </submenu-->    
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder to 
+			copy FROM in the package to install therefore files copied in this section 
+			are copied from /admin/ in the package -->
+
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>flightmanager.php</filename>
+			<filename>controller.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_apinorwegian.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_apinorwegian.sys.ini</language>
+		</languages>
+	</administration>
+
+</extension>

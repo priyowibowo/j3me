@@ -1,0 +1,171 @@
+/**********************************
+
+Use: Reset Styles for all browsers
+
+***********************************/
+	
+body, p, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+a img, iframe { border: none; }
+	
+/* Headers
+------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+	
+/* Lists
+------------------------------*/
+	
+ul, ol, dl, li, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+	
+/* Links
+------------------------------*/
+
+a, a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+/* Forms
+------------------------------*/
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+form#travel-search {box-shadow:0 0 6px rgba(0, 0, 0, 0.3);background:#DAEEF3;padding:5px;border-top:2px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;}	
+form#travel-search label{float:none}
+form#travel-search legend{background:none;padding:0px;font-weight:bold;font-size:13px}
+	
+fieldset {  }
+
+
+fieldset#typen{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#destination{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#Currency{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#Passangers{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#fieldset-category{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#fieldset-date{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#fieldset-roundtrip{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+fieldset#fieldset-combination{ width:100%;padding-left:0px;background:##fff;border: 0px solid #000;margin-bottom:10px }
+
+
+fieldset#Passangers select{width:50px}
+
+
+
+legend {
+	padding: 0;
+	color: #417CAB;
+	width:100%;
+	background:none;
+	
+}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+}
+	
+select { padding: 0; }
+
+select#fromdest{ width:160px }
+select#todest{ width:160px }
+select#mfa31{ width:70px }
+select#accomodation{ width:100px }
+label#mf276{ margin-right:7px }
+label#mf321{ margin-right:18px }
+label#Currency{ color:#417CAB }
+
+input#search-button.button {margin-left:75px;margin-bottom:10px;background:url("images/button2.png") no-repeat scroll right top transparent;color:#fff;border:0px;padding:7px 35px 13px 20px;}
+input#add-room-hotel {background:url("images/+.png") no-repeat;padding-left:20px;height:20px;border:0px;color:#417CAB}
+input#book {background:url("images/bg.jpg") repeat;width:60px;margin-top:10px;height:30px;padding:3px 5px;border:0px;color:#fff;border-radius:5px}
+
+
+a.delete-room  {background:url("images/-.png") no-repeat;width:73px;height:20px;border:0px;color:#417CAB;padding:3px 8px 7px 24px}
+.ldes {display:inline-block;min-width:30px}
+.lpas {display:inline-block;width:90px}
+.tlpas {display:inline-block;width:120px;color:#417CAB;font-weight:bold}
+.ldat {display:inline-block;width:90px}
+.lcat{display:inline-block;width:50px}
+.ltyp{float:none}
+
+h3.h3top {text-shadow:0.1em 0.1em 0.2em #DDDDDD;border-bottom:1px solid #eee;padding-bottom:10px}
+h4.h4top {text-shadow:0.1em 0.1em 0.2em #DDDDDD;padding-bottom:15px;padding-top:5px}
+h5.h5top {font-weight:bold;color:#417CAB}
+
+div#tabletop {border:1px solid #eee;padding:10px;} /* background:url("images/logo.png") no-repeat scroll right top transparent; */
+
+.head {background:url("images/bg.jpg") repeat scroll 0 0 transparent;color:#000;text-align:left;width:100px;
+opacity:0.7;
+filter:alpha(opacity=70); /* For IE8 and earlier */}
+
+.head:hover {background:ddd}
+form#travel-search1 {background:#eee;}
+table.flight td{text-indent:5px;padding:0px;text-align:left;font-size:12px;background:url("http://media.smashingmagazine.com/images/express-css-table-design/table-images/gradback.png") repeat-x scroll 0 0 #E8EDFF;border:0px dotted #ddd;
+opacity:0.9;
+filter:alpha(opacity=90); /* For IE8 and earlier */}
+table.flight td:hover{background:url("http://media.smashingmagazine.com/images/express-css-table-design/table-images/gradhead.png") repeat-x scroll 0 0 #B9C9FE}
+
+table.flight th{text-align:left;font-size:12px;padding-left:5px;padding:0px;text-indent:5px;}
+}
+
+div#tabletop table{margin-top:5px}
+
+table#img {background:none;margin:5px}
+div#list {background:#fff;border:1px solid #eee;margin-bottom:10px;padding-left:5px;padding-top:5px}
+div#list img {width:250px;height:130px;border:1px solid #eee;padding:5px}
+div#list:hover {background:#DAEEF3}
+
+td.img {width:30%;}
+td.info {width:32%}
+td.info ul{margin-top:0px;padding-left:5px;}
+
+td.one {width:30%;font-size:11px}
+td.two {width:40%;font-size:11px;text-align:right;padding-right:10px}
+
+td.last {border-left:1px dotted #eee}
+td.last ul {padding-left:10px}
+td.three {border-left:1px dotted #eee;width:22%;font-size:11px;text-align:right}
+
+table#bottom{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px 4px 10px 11px;
+    position: relative;
+	z-index=1000}
+	
+ul.checklistcf .check span {background-position:0 0}
+ul.checklistcf span {padding-left:15px;background:url("images/checkbox.png") no-repeat scroll 0 -37px transparent}
+td.last li {margin-bottom:3px;list-style:none outside none}
+td.info li {margin-bottom:3px;list-style:none outside none;}
+td.two li{list-style:none outside none}
+
+a.fetchdata {margin-right:10px;font-size:1.6em}
+
+li.rating span {}
+li.rating1 {background:url("images/star.png") no-repeat scroll 0 -48px transparent;padding-bottom:15px}
+li.rating2 {background:url("images/star.png") no-repeat scroll 0 -111px transparent;padding-bottom:15px}
+li.rating3 {background:url("images/star.png") no-repeat scroll 0 -175px transparent;padding-bottom:15px}
+li.rating4 {background:url("images/star.png") no-repeat scroll 0 -239px transparent;padding-bottom:15px}
+li.rating5 {background:url("images/star.png") no-repeat scroll 0 -304px transparent;padding-bottom:15px}
+
+li.notif {font-size:11px;}

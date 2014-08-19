@@ -1,0 +1,37 @@
+/* 
+    Document   : gt
+    Created on : Feb 22, 2013, 2:58:54 PM
+    Author     : Priyo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+table.group-travel{
+    width: 100%
+}
+
+td.gt-white {
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+tr.gt-0{
+    background-color: #D0D0D0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+tr.gt-1{
+    background-color: #EEEEEE;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.gt-td{
+    padding: 4px;
+}
+ 
+tr.gt-0 img, tr.gt-1 img{
+    border: 1px solid #FFFFFF;
+    height: 100px;
+    width: 210px;
+}
