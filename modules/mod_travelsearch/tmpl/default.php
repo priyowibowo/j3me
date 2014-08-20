@@ -27,7 +27,7 @@ $document->addStyleDeclaration($style);
 <form action="<?php echo JRoute::_('index.php?option=com_travelsearch');?>" method="post" id="travel-search">    
 <!-- Buat fieldset dan legend untuk tipe penerbangan -->
 <fieldset id="typen">
-    <legend>Vælg rejsetype</legend>
+  <legend><?php echo JText::_("MOD_TRAVELSEARCH_TRIPTYPE");?></legend>
     <div>
         <span class="type-A"><input type="radio" value="A" name="holidayType" checked="checked"> <label><?php echo JText::_("MOD_TRAVELSEARCH_FLYHOTEL");?></label></span> <!--Fly &amp; Hotelpakker-->
     </div>
@@ -189,7 +189,8 @@ $document->addStyleDeclaration($style);
 <!-- Buat currency -->
 <fieldset id="Currency">
     <label id="Currency"><?php echo JText::_("MOD_TRAVELSEARCH_CURR");?></label><!-- Valuta -->
-        <select name=currency id=idcurrency>
+    
+        <select name=currency id=idcurrency style="width: 100%">
             <option value="NOK">NOK</option>
             <option value="SEK">SEK</option>
             <option value="DKK" selected="selected">DKK</option>
@@ -206,3 +207,26 @@ $document->addStyleDeclaration($style);
 <input type="hidden" name="mod_srcapi" value="" id=mod-srcapi>
 <input type="hidden" name="mod_hotels" value="" id=mod-hotels>
 </form>      
+<?php
+$document->addScript('modules/mod_travelsearch/tmpl/js/jquery-ui/jquery-1.8.3.min.js');
+$document->addScript('modules/mod_travelsearch/tmpl/js/jquery-ui/jquery.ui.datepicker.js');
+$document->addScript('modules/mod_travelsearch/tmpl/js/jquery-ui/jquery-ui-1.8.18.custom.min.js');
+$document->addScript('modules/mod_travelsearch/tmpl/js/jquery-ui/jquery.ui.datepicker-da.js');
+$document->addScript('modules/mod_travelsearch/tmpl/js/mod_travelsearch.main.js');
+$document->addScriptDeclaration('
+    jQuery(document).ready(function(){
+      jQuery( "#fromDate" ).datepicker({
+        showOtherMonths: true,
+        format: "dd-mm-yyyy",
+        selectOtherMonths: true,
+        selectOtherYears: true
+      });
+      jQuery( "#toDate" ).datepicker({
+        showOtherMonths: true,
+        format: "dd-mm-yyyy",
+        selectOtherMonths: true,
+        selectOtherYears: true
+      });
+    });
+');
+?>

@@ -1,25 +1,25 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
     // create the loading window and set autoOpen to false
-    jQuery("#loadingScreen").dialog({
-            autoOpen: false,	// set this to false so we can manually open it
-            dialogClass: "loadingScreenWindow",
-            closeOnEscape: false,
-            draggable: false,
-            width: 60,
-            height: 110,
-            modal: true,
-            buttons: {},
-            resizable: false,
-            open: function() {
-                    // scrollbar fix for IE
-                    jQuery('body').css('overflow','hidden');
-            },
-            close: function() {
-                    // reset overflow
-                    jQuery('body').css('overflow','auto');
-            }
-    }); // end of dialog
+//    jQuery("#loadingScreen").dialog({
+//            autoOpen: false,	// set this to false so we can manually open it
+//            dialogClass: "loadingScreenWindow",
+//            closeOnEscape: false,
+//            draggable: false,
+//            width: 60,
+//            height: 110,
+//            modal: true,
+//            buttons: {},
+//            resizable: false,
+//            open: function() {
+//                    // scrollbar fix for IE
+//                    jQuery('body').css('overflow','hidden');
+//            },
+//            close: function() {
+//                    // reset overflow
+//                    jQuery('body').css('overflow','auto');
+//            }
+//    }); // end of dialog
     
     function waitingDialog(waiting) { // I choose to allow my loading screen dialog to be customizable, you don't have to
 	jQuery("#loadingScreen").html(waiting.message && '' != waiting.message ? waiting.message : '');
